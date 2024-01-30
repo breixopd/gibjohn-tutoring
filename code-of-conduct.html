@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Code Of Conduct - GibJohn</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body id="page-top" style="font-family: 'Open Sans', sans-serif;">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" style="font-family: 'Open Sans', sans-serif;">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="dashboard.php">
+                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="sidebar-brand-text mx-3"><span>GibJohn</span></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link" href="dashboard.php"><i class="fa fa-inbox"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="activities.php"><i class="fa fa-folder-open"></i><span>Activities</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="subjects.php"><i class="fa fa-paperclip"></i><span>Subjects</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="knowledgebase.php"><i class="fa fa-book"></i><span>Knowledgebase</span></a></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <ul class="navbar-nav flex-nowrap ms-auto">
+                            <li class="nav-item dropdown no-arrow">
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown"><span class="d-none d-lg-inline me-2 text-gray-600 small"><?php echo $_SESSION['name']; ?></span><img class="border rounded-circle img-profile" src="https://robohash.org/<?php echo filter_var($_SESSION['name'], FILTER_SANITIZE_STRING); ?>">
+                                        <!--Allows user to enter settings or sign out when clicked-->
+                                    </a>
+                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="settings.php"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a>
+                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="dashboard.php?logout='1'"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i> Logout</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!--Navbar is linked accross every page so it always looks the same-->
+                    </div>
+                </nav>
+                <div class="container-fluid">
+                    <h1>Code Of Conduct</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ipsum urna, ullamcorper auctor lobortis eu, ullamcorper eu est. Vestibulum tempus feugiat nisi, sit amet faucibus turpis efficitur vel. Pellentesque viverra justo ac purus egestas hendrerit. Nam iaculis ante neque, id pellentesque sem venenatis varius. Pellentesque quis odio eu odio sodales varius in at nibh. Mauris ipsum purus, luctus vitae viverra vel, aliquet sit amet odio. Duis auctor, mauris nec auctor euismod, magna odio suscipit eros, in mattis sem diam sed massa.Curabitur vitae aliquam ante. Duis id auctor lacus. Aenean lacinia velit et dui auctor sollicitudin. Sed ac nisl non dolor suscipit bibendum. Aliquam erat volutpat. Duis tempor vitae ante sed tincidunt. Quisque ut interdum tortor, a gravida massa. Mauris sed rutrum leo. Vestibulum sit amet lorem nec ante feugiat ullamcorper. Proin fringilla mauris in mauris sollicitudin pretium.Ut eu semper ipsum. Praesent pulvinar elit lorem, eget feugiat lorem fermentum ac. Quisque erat leo, viverra vel est et, interdum auctor elit. Nunc hendrerit consectetur egestas. In vitae euismod sapien. Aenean interdum sem ligula, eu ornare neque congue eget. Etiam vitae fringilla magna. Nunc eu consectetur felis. Praesent porta, erat at elementum tristique, tortor ex placerat arcu, quis mollis nibh nibh eu massa. Fusce ullamcorper condimentum dolor eget ullamcorper. Maecenas nisl mi, pharetra in mattis sed, sodales eget quam. Pellentesque imperdiet enim id lectus aliquet, quis gravida sem eleifend. Fusce pulvinar libero at neque congue elementum. Etiam consectetur, quam rhoncus venenatis iaculis, nibh eros aliquet lacus, quis tempus nibh enim sit amet velit. In tempus tincidunt dolor vitae lobortis. Sed vel ipsum cursus, euismod sapien ut, sagittis sapien.Sed eu bibendum ipsum, at posuere eros. Quisque ut rhoncus neque. Nullam ut diam ut tellus volutpat vulputate vitae quis lacus. Quisque augue enim, gravida et viverra nec, dapibus eu ex. Proin congue interdum massa, vel accumsan enim porta vel. Etiam lobortis diam ut viverra imperdiet. Phasellus porttitor in turpis sed sollicitudin. Quisque rutrum pellentesque leo vel malesuada. Integer commodo interdum lorem. Integer tincidunt vitae tellus sit amet porta. Pellentesque porttitor faucibus nisi et accumsan. Nam scelerisque tincidunt sagittis.Nam non mi vitae ex porttitor efficitur vitae eget nisl. Nunc vehicula gravida lorem, non elementum sapien imperdiet laoreet. Vivamus pharetra lectus eu odio finibus facilisis. Donec porttitor eleifend elit eu mollis. Pellentesque suscipit a ante vitae imperdiet. Sed non ante turpis. Pellentesque porttitor non metus ut imperdiet. Vestibulum condimentum, tellus vitae commodo placerat, dui sapien molestie turpis, id egestas neque erat ut ex.Proin condimentum pulvinar leo, a facilisis diam euismod in. Aenean ut hendrerit sapien. Donec porta iaculis commodo. Aliquam id felis eget nunc pretium volutpat non vel sapien. Fusce ultrices pellentesque ex vel venenatis. Suspendisse euismod metus quis diam pretium mollis. Phasellus eget ipsum non neque pellentesque ullamcorper. Integer tincidunt libero ut odio accumsan semper.Curabitur a commodo dui, vitae tincidunt mi. Quisque ac elementum massa, vitae iaculis ex. Praesent in lorem purus. Nam varius risus ipsum, mollis fringilla magna efficitur et. Duis at tristique risus. Donec condimentum, dolor non elementum aliquam, odio sem rutrum ante, eget sodales neque sem non orci. Donec aliquet, est ac aliquam aliquam, erat nisl tincidunt magna, non commodo orci quam porttitor risus. In sodales mollis rutrum. Aliquam pharetra pharetra ullamcorper. Integer sed venenatis justo. Vivamus tellus eros, semper in aliquet non, interdum ut turpis. Praesent ut lectus tempus, pharetra odio et, interdum elit. Suspendisse blandit finibus pharetra. Cras nisi urna, convallis in feugiat nec, auctor sed arcu. Proin ullamcorper purus sed erat dictum tempor a id enim. Maecenas dui felis, placerat eget auctor vel, molestie at velit.Sed at cursus sem. Nullam eu ligula commodo, lacinia sem congue, sagittis neque. Nulla velit erat, iaculis in vestibulum id, blandit sed orci. Aenean et suscipit eros, eu dignissim orci. Duis nisi mi, pellentesque at mauris sed, egestas rhoncus nisi. Suspendisse in semper massa, sed posuere lectus. Suspendisse ac rhoncus neque. Fusce eget ornare mauris, a venenatis turpis. Quisque venenatis arcu non dolor laoreet mollis sit amet nec sem. Sed at nunc sit amet lectus lacinia posuere. Pellentesque viverra maximus eleifend.Aliquam id faucibus nulla. Integer sagittis velit turpis, quis consectetur nisi porttitor vitae. Donec sit amet purus nec augue malesuada euismod varius quis lorem. Nam at libero sed ex dignissim pulvinar. Nam tellus tortor, molestie at condimentum quis, tincidunt non mauris. Sed aliquam elit a mi posuere dictum. Nulla ut porttitor mauris. Nullam vitae suscipit mauris. Ut erat arcu, luctus et turpis id, sodales viverra dui. Etiam interdum sem ut consectetur molestie. Nullam nec lectus a quam imperdiet dapibus. Fusce laoreet lacinia metus, non feugiat dui volutpat eu.Nullam ut urna scelerisque, convallis diam ultrices, tempus justo. Maecenas rhoncus velit vitae orci dignissim, sed lobortis risus rhoncus. Praesent orci ipsum, imperdiet sed posuere sit amet, dictum id ligula. Morbi metus augue, pretium eget est sit amet, sodales fringilla purus. Suspendisse porta nulla eget volutpat bibendum. Maecenas porttitor, dolor non rutrum aliquam, leo velit finibus ante, at suscipit lectus augue placerat tellus. Duis porta aliquet lorem, porttitor dapibus dui elementum non. Aliquam vehicula sollicitudin augue sit amet bibendum. Duis congue odio vel gravida accumsan.<br></p>
+                </div>
+            </div>
+            <footer class="bg-white sticky-footer" style="font-family: 'Open Sans', sans-serif;">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Copyright © GibJohn 2022 | <a href="privacy-policy.html">Privacy Policy</a> | <a href="code-of-conduct.html">Code of Conduct</a>&nbsp;| 07000000000 |&nbsp;<a href="mailto:support@email.com"><span style="text-decoration: underline;">support@email.com</span></a><br></span></div>
+                </div>
+                <!--Footer is linked accross every page so it always looks the same-->
+            </footer>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
